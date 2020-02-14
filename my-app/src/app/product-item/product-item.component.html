@@ -1,0 +1,27 @@
+<h1>Aliexpress Shop</h1>
+
+<div class="containerr" *ngFor = "let product of products">
+    <div class="items">
+    <h3>
+        <a [title] = "product.name + ' details'" href="{{product.link}}">
+            {{product.name}}
+        </a>
+    </h3>
+    <h2>
+        ${{product.price}} Rating: {{product.rating}} 
+    </h2>
+    <ngx-image-zoom 
+    [thumbImage]=product.picture
+    [fullImage]=product.picture
+    [magnification]="1"
+    [enableScrollZoom]="true"
+    [enableLens]="true"
+    [lensWidth]="200" 
+    ></ngx-image-zoom>
+    <p *ngIf="product.description">
+        {{product.description}}
+    </p>
+    <button shareButton="whatsapp" [url]="product.link" [description]="product.name">Share</button>
+    </div>
+    <br>
+</div>
