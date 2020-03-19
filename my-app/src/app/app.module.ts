@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductItemComponent } from './product-item/product-item.component';
-import { BehaviorSubject, Observable } from "rxjs";
 
 import { ShareModule } from '@ngx-share/core';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';

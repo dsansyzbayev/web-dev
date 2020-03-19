@@ -1,0 +1,11 @@
+<div *ngIf="job">
+    <h2 class="job-title">{{job.id}}: {{job.title}}</h2>
+    <label class="job-label"> Job title: {{job.title}}
+        <input [(ngModel)]="job.title" placeholder="name"/>
+    </label><br>
+    <label class="job-label"> Job description: {{job.description}}
+        <input [(ngModel)]="job.description" placeholder="name"/><br>
+    </label>
+    <h4> Likes: {{job.like_count}}</h4>
+    <button (click)="like()">Like</button>
+</div>

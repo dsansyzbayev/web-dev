@@ -1,0 +1,8 @@
+<h2 class="job-title">Jobs</h2>
+<ul class="jobbs">
+  <li class="job-row" *ngFor="let job of jobs">
+    <a routerLink="/jobs/{{job.id}}">
+      {{job.id}} {{job.title}}
+    </a>
+  </li>
+</ul>

@@ -1,0 +1,8 @@
+<div *ngIf="pageNews">
+  <p>id: {{ pageNews.id }}</p>
+  <p>title: {{ pageNews.title }}</p>
+  <p>description: {{ pageNews.description }}</p>
+  <button (click)="changeTitle('Imma new title, Morty')">
+    Change title
+  </button>
+</div>

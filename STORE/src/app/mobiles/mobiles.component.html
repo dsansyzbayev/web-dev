@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<h1><strong>Mobiles</strong></h1>
+<div class="container">
+  <div class="column" *ngFor="let mobile of mobiles">
+    <a>
+        <div>
+            <span><img src ="{{mobile.img}}" width="250px" height="250px"></span> 
+            <div>
+                <h2 class = "pr_name">{{mobile.name}}</h2>
+                <div>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span> 
+                </div>
+                <p>{{mobile.description}}</p>
+                <a href = "https://web.whatsapp.com/send?text=Смотри какой крутой товар:{{mobile.link}}">
+                    <button (click)="share(mobile.name)">
+                        Share
+                    </button>
+                </a>
+                <button routerLink = '/mobiles/{{mobile.id}}' (click) = "onSelect(mobile)">More</button>
+            </div>
+        </div>
+    </a>  
+  </div>
+</div>

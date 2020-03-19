@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<h1 class = "product_header"><strong>Smart Watches</strong></h1>
+<div class="container">
+  <div class="column" *ngFor="let earbud of earbuds">
+    <a>
+        <div>
+            <span><img src ="{{earbud.img}}" width="250px" height="250px"></span> 
+            <div>
+                <h2 class = "pr_name">{{earbud.name}}</h2>
+                <div>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span> 
+                </div>
+                <p>{{earbud.description}}</p>
+                <a href = "https://web.whatsapp.com/send?text=Смотри какой крутой товар:{{earbud.link}}">
+                    <button (click)="share(earbud.name)">
+                        Share
+                    </button>
+                </a>
+                <button routerLink = '/earbuds/{{earbud.id}}' (click) = "onSelect(earbud)">More</button>
+            </div>
+            
+        </div>
+    </a>
+  </div>  
+</div>

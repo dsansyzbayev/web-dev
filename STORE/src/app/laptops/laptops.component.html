@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<h1><strong>Laptops</strong></h1>
+<div class="container">
+    <div class="column" *ngFor="let laptop of laptops">
+        <a  style="text-decoration:none;">
+                <span class="badge"><img src ="{{laptop.img}}" width="250px" height="250px" style="justify-self: center;"></span> 
+                <div style="margin-left: 30px;">
+                    <a href = "{{laptop.link}}">
+                        <h2 class = "pr_name">{{laptop.name}}</h2>
+                    </a>
+                    
+                    <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span> 
+                    </div>
+                    <p>{{laptop.description}}</p>
+                    <a href = "https://web.whatsapp.com/send?text=Смотри какой крутой товар:{{laptop.link}}">
+                        <button (click)="share(laptop.name)">
+                            Share
+                        </button>
+                    </a>
+                    <button routerLink = '/laptops/{{laptop.id}}' (click) = "onSelect(laptop)">More</button>
+                </div>
+            </a>
+    </div>
+</div>
