@@ -1,7 +1,7 @@
 <nav>
   <div class="container">
-    <div><img src="../../assets/ramen.svg" alt=""></div>
-    <div class="nav-title"><a>bowl time</a></div>
+      <div class="nav-logo"><img src="../../assets/ramen.svg" alt=""></div>
+      <div class="nav-title"><a>bowl time</a></div>
     <div class="search-bar input-group">
       <label>
         <input type="text" placeholder="Search"/>
@@ -9,10 +9,10 @@
     </div>
     <div class="btn-group">
       <div>
-        <button class="unit" type="button">Login</button>
+        <button [routerLink]="['/login']" class="unit" type="button">Login</button>
       </div>
       <div>
-        <button class="unit" type="button">Sign up</button>
+        <button [routerLink]="['/signup']" class="unit" type="button">Sign up</button>
       </div>
     </div>
   </div>

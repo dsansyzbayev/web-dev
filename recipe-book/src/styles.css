@@ -8,6 +8,10 @@ html{
 body{
     background-color: #EBECF0;
     margin: auto;
-    width: 60%;
+    width: 65%;
 }
 
+.borders {
+    display: flex;
+    justify-content: space-between;
+}
