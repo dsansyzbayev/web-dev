@@ -7,6 +7,7 @@ export interface User {
     name: string;
     last_name: string;
     email: string;
+    image: string;
     saved_recipes: Recipe[];
     user_recipes: Recipe[];
 }

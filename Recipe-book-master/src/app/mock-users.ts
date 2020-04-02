@@ -1,7 +1,5 @@
 import { User } from './user';
-import { List } from './list'
-
-export var logedin: boolean = false;
+import { List } from './list';
 
 export const mockUser: User = {
     id: 0,
@@ -10,6 +8,7 @@ export const mockUser: User = {
     name: 'dan',
     last_name: 'sansyzbayev',
     email: 'daniar004@gmail.com',
-    saved_recipes: [List[0], List[1], List[3],],
+    image: '../../assets/download.png',
+    saved_recipes: [List[0], List[1], List[3]],
     user_recipes: [],
-}
+};

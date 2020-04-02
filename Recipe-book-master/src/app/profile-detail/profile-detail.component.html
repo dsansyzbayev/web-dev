@@ -1,0 +1,17 @@
+<app-user-profile></app-user-profile>
+<div class="profile-cont">
+  <form class="user-data">
+    <label>Name:<br>
+      <input [ngModel]="user.name" name="firstname" placeholder="{{user.name}}">
+    </label>
+    <label>Last Name:<br>
+      <input [ngModel]="user.last_name" name="lastname" placeholder="{{user.last_name}}">
+    </label>
+    <label>Email:<br>
+      <input [ngModel]="user.email" name="email" placeholder="{{user.email}}">
+    </label>
+  </form>
+  <div class="user-photo">
+    <img src="{{user.image}}" alt="profile">
+  </div>
+</div>
