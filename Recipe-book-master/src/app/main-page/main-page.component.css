@@ -1,0 +1,12 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    background-color: #EBECF0;
+    justify-content: center;
+}
+.left{
+    width: 25%;
+}
+.center{
+    width: 30%;
+}

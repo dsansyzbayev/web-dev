@@ -1,0 +1,24 @@
+<nav>
+  <div class="container1">
+    <div class="logo">
+      <img src="../../assets/ramen.svg" alt="">
+      <a class="nav-title" href="/main">bowl time</a>
+    </div>
+    <div class="search-bar input-group">
+      <label>
+        <input type="text" placeholder="Search"/>
+      </label>
+    </div>
+    <div class="btn-group">
+      <div>
+        <button [routerLink]="['/login']" class="unit" type="button">Login</button>
+      </div>
+      <div>
+        <button [routerLink]="['/signup']" class="unit" type="button">Sign up</button>
+      </div>
+      <div>
+        <button [routerLink]="['/profile']" class="unit" type="button">Profile</button>
+      </div>
+    </div>
+  </div>
+</nav>
