@@ -1,8 +1,10 @@
 <nav>
-  <div class="container1">
-    <div class="logo">
+  <div class="container">
+    <div class="logo" routerLink="/main">
       <img src="../../assets/ramen.svg" alt="">
-      <a class="nav-title" href="/main">bowl time</a>
+      <div class="nav-title">
+        <a>bowl time</a>
+      </div>
     </div>
     <div class="search-bar input-group">
       <label>
@@ -11,13 +13,14 @@
     </div>
     <div class="btn-group">
       <div>
-        <button [routerLink]="['/login']" class="unit" type="button">Login</button>
+        <button [routerLink]="['/login']" class="unit" type="button" id="login">Login</button>
       </div>
       <div>
-        <button [routerLink]="['/signup']" class="unit" type="button">Sign up</button>
+        <button [routerLink]="['/signup']" class="unit" type="button" id="signup">Sign up</button>
       </div>
       <div>
-        <button [routerLink]="['/profile']" class="unit" type="button">Profile</button>
+        <button [routerLink]="['/profile/details']" class="unit setInvisible" id="profile" type="button">Profile
+        </button>
       </div>
     </div>
   </div>

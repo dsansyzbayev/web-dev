@@ -1,12 +1,13 @@
-.main{
-    display: flex;
-    flex-direction: row;
-    background-color: #EBECF0;
-    justify-content: center;
+.main {
+  display: flex;
+  flex-direction: row;
+  background-color: #EBECF0;
 }
-.left{
-    width: 25%;
+
+.left {
+  width: 25%;
 }
-.center{
-    width: 30%;
+
+.center {
+  width: 50%;
 }

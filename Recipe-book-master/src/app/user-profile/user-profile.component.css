@@ -1,10 +1,10 @@
 .profile-container {
   background: #EBECF0;
-  width: 75%;
   margin: auto;
 }
 
-.left-menu{
+.left-menu {
+  background: #EBECF0;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -20,9 +20,9 @@
   width: 30%;
   padding: 1% 1% 1% 1%;
   background-color: #EBECF0;
-  box-shadow: -5px -5px 20px #FFF,  5px 5px 20px #BABECC;
+  box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
   text-align: center;
-  color: rgb(97,103,124);
+  color: rgb(97, 103, 124);
   text-shadow: 1px 1px 0 #FFF;
   font-size: 18px;
   font-family: 'Montserrat', sans-serif;
@@ -30,10 +30,10 @@
   font-weight: bold;
 }
 
-.menu-btn:hover{
+.menu-btn:hover {
   box-shadow: -2px -2px 5px white, 2px 2px 5px #BABECC;
 }
 
-.menu-btn:active{
+.menu-btn:active {
   box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px white;
 }

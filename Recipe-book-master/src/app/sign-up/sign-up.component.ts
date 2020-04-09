@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {CategoryService} from '../category.service';
 
 @Component({
   selector: 'app-sign-up',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignUpComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private categoryService: CategoryService
+  ) {
+  }
 
   ngOnInit() {
+  }
+
+  logIn() {
+    this.categoryService.triggerOnMyButton();
   }
 
 }

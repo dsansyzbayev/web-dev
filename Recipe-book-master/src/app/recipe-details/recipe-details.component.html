@@ -1,46 +1,63 @@
 <div *ngIf="selectedItem">
-  <div class="card">
-    <div class="card-body">
+  <div class="card1">
+    <div class="title">
       {{selectedItem.category.name}}
-      <div class="title">
-        <h2>
-          {{selectedItem.title}}
-        </h2>
-        <div>
-          <button type="button" (click)="save()">Save</button>
-          <button type="button" (click)="back()">Back</button>
-        </div>
+      <h2>
+        {{selectedItem.title}}
+      </h2>
+      <div>
+        <button type="button" (click)="save()">Save</button>
+        <button type="button" (click)="back()">Back</button>
       </div>
-      <hr>
-      <div class="box">
-        <div class="left-part">
-          <img src={{selectedItem.front_image}} style="width: 90%">
-          <div *ngFor='let photo of selectedItem.images'>
-            <img src={{photo}} style="width: 90%; margin-top: 5%">
+    </div>
+    <hr>
+    <div class="box">
+      <div *ngFor="let photo of selectedItem.images">
+        <img src={{photo}} style="width: 90%; height: 300px; margin-top: 5%">
+      </div>
+    </div>
+    <div>
+      <div class="section">
+        <h4>
+          Rating: {{selectedItem.likes}}
+        </h4>
+      </div>
+      <div class="section">
+        <p>Description:</p> {{selectedItem.description}}
+      </div>
+      <div class="intro">
+        <div class="card" style="width: 20%">
+          <div class="section">
+            <i>
+              <h2>Ingredients:</h2>
+            </i>
+            <div *ngFor="let i of selectedItem.ingredients">
+              <p>
+                * {{i}}
+              </p>
+            </div>
           </div>
         </div>
-        <div class="right-part">
+        <div class="card" style="width: 45%">
           <div class="section">
-            Rating: {{selectedItem.likes}}
-          </div>
-          <div class="section">
-            <strong>Description:</strong> {{selectedItem.description}}
-          </div>
-          <div class="section">
-            <strong>Ingredients:</strong> {{selectedItem.ingredients}}
-          </div>
-          <div class="section">
-            <strong>Directions:</strong>
+            <i>
+              <h2>Directions:</h2>
+            </i>
             <div *ngFor='let step of selectedItem.steps, let i = index'>
-              Step {{i+1}}.
-              <br>
+              <p>
+                Step {{i + 1}}.
+              </p>
               {{step}}
             </div>
           </div>
+        </div>
+        <div class="card" style="width: 20%">
           <div class="section">
-            Comments:
+            <h3>Comments:</h3>
             <div *ngFor='let step of selectedItem.comments, let i = index'>
-              - {{step}}
+              <h5>
+                - {{step}}
+              </h5>
             </div>
           </div>
         </div>
@@ -48,3 +65,4 @@
     </div>
   </div>
 </div>
+<app-footer></app-footer>

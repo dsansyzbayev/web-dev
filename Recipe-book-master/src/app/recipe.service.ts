@@ -11,14 +11,23 @@ export class RecipeService {
   constructor() {
     this.chooseList(1);
   }
-  getRecipes(id: number): Observable<Recipe[]> {
+  getRecipes(): Observable<Recipe[]>{
+    return of(List);
+  }
+
+  getRecipe(id: number): Observable<Recipe[]> {
     this.list = List.filter(
       recipe => recipe.category.id === id
     );
     return of (this.list);
   }
   chooseList(id: number): void {
-    this.getRecipes(id).subscribe(list => this.list = list);
+    this.getRecipe(id).subscribe(list => this.list = list);
+  }
+
+  addRecipe(recipe: Recipe): void {
+    this.list.push(recipe);
+    alert('Recipe added');
   }
 
 }

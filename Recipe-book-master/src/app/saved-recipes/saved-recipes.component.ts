@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {List} from '../list';
 
 @Component({
   selector: 'app-saved-recipes',
@@ -6,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./saved-recipes.component.css']
 })
 export class SavedRecipesComponent implements OnInit {
+  savedRecipes = List;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

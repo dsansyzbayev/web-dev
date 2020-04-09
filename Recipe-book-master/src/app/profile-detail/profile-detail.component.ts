@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { mockUser} from '../mock-users';
+import { CategoryService} from '../category.service';
+import { User } from '../user';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-profile-detail',
@@ -7,11 +10,30 @@ import { mockUser} from '../mock-users';
   styleUrls: ['./profile-detail.component.css']
 })
 export class ProfileDetailComponent implements OnInit {
-  user = mockUser;
+  @Input() user: User;
 
-  constructor() { }
+  constructor(
+    private categoryService: CategoryService,
+    private userService: UserService
+  ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.getUser();
+  }
+
+  getUser(): void {
+    this.userService.getUser()
+      .subscribe((user) =>{
+        this.user = user;
+      });
+  }
+
+  logOut() {
+    this.categoryService.triggerOnMyButton();
+  }
+
+  save(): void{
+    this.userService.updateUser(this.user)
   }
 
 

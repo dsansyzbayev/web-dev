@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {RecipeService} from '../recipe.service';
 
 @Component({
@@ -9,7 +9,8 @@ import {RecipeService} from '../recipe.service';
 export class MainListComponent implements OnInit {
   constructor(
     public recipeService: RecipeService
-  ) { }
+  ) {
+  }
 
   ngOnInit() {
   }

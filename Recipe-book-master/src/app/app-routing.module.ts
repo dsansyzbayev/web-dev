@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { LogInComponent } from '../app/log-in/log-in.component';
 import { SignUpComponent } from '../app/sign-up/sign-up.component';
 import { MainPageComponent } from './main-page/main-page.component';
-import { RecipeDetailsComponent} from './recipe-details/recipe-details.component';
+import {RecipeDetailsComponent} from './recipe-details/recipe-details.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import {ProfileDetailComponent} from './profile-detail/profile-detail.component';
 import {MyRecipesComponent} from './my-recipes/my-recipes.component';

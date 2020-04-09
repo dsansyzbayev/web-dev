@@ -1,2 +1,14 @@
-<app-user-profile></app-user-profile>
-<app-best-recipes></app-best-recipes>
+<div class="body">
+  <app-user-profile></app-user-profile>
+<div class="items">
+  <div *ngFor="let recipe of savedRecipes" class="card" routerLink="/recipe/:{{recipe.id}}/details">
+    <h2>
+      <a [title]="recipe.title + ' details'">
+        {{ recipe.title }}
+      </a>
+    </h2>
+    <img src="{{recipe.front_image}}">
+  </div>
+</div>
+</div>
+<app-footer></app-footer>

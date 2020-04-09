@@ -1,20 +1,60 @@
+<div class="body">
 <app-user-profile></app-user-profile>
 <div class="recipe-form">
+<div class="colmn">
   <div class="inp">
     <label>Title: <br>
-      <input type="text" formControl="recipeName">
+      <input [ngModel]="recipe?.title" type="text">
     </label>
   </div>
   <div class="inp">
     <label>Description: <br>
-      <input type="text" formControl="description">
+      <input [ngModel]="recipe?.description" type="text">
     </label>
   </div>
   <div class="inp">
-    <button (click)="newRecipe()">Add recipe</button>
+    <label>Category: <br>
+      <select [ngModel]="recipe?.category">
+        <option *ngFor="let c of categories" [ngValue]="c">{{c.name}}</option>
+      </select>
+    </label>
+  </div>
+  <div>
+    <label>Photo: <br>
+      <div class="file">
+        <input type="file" accept="image/png, image/jpeg" class="hide_file">
+      </div>
+    </label>
   </div>
 </div>
-<hr>
-<div>
-  <app-best-recipes></app-best-recipes>
+<div class="colmn">
+  <div class="inp">
+    <label>Ingredients: <br>
+      <textarea [ngModel]="recipe?.ingredients" name="ingredients" cols="30" rows="10"></textarea>
+    </label>
+  </div>
 </div>
+  <div class="colmn">
+    <div class="inp">
+      <label>Steps: <br>
+        <textarea [ngModel]="recipe?.steps" name="" cols="30" rows="10"></textarea>
+      </label>
+    </div>
+  </div>
+</div>
+  <div class="button-new">
+    <button (click)="newRecipe()">Add recipe</button>
+  </div>
+<hr>
+<div class="items">
+  <div *ngFor="let recipe of savedRecipes" class="card" routerLink="/recipe/:{{recipe.id}}/details">
+    <h2>
+      <a [title]="recipe.title + ' details'">
+        {{ recipe.title }}
+      </a>
+    </h2>
+    <img src="{{recipe.front_image}}">
+  </div>
+</div>
+</div>
+<app-footer></app-footer>

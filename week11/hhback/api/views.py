@@ -29,10 +29,10 @@ def get_all_vacancies(request):
 
 def get_vac_by_id(request, id):
     vacancy = Vacancy.objects.filter(pk=id)
-    json_vac = serializers.serialize('json',vacancy)
+    json_vac = serializers.serialize('json', vacancy)
     return HttpResponse(json_vac,content_type='application/json')
 
 def get_top_ten(request):
     top10 = Vacancy.objects.order_by('salary')[:10]
-    json_top10 = serializers.serialize('json',top10)
+    json_top10 = serializers.serialize('json', top10)
     return HttpResponse(json_top10, content_type='application/json')

@@ -1,6 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 import {FormControl} from '@angular/forms';
-import { mockUser} from '../mock-users';
+import {mockUser} from '../mock-users';
+import {List} from '../list';
+import { RecipeService} from '../recipe.service';
+import {Recipe} from '../recipe';
+import { CategoryService} from '../category.service';
+import {Category} from '../category';
 
 @Component({
   selector: 'app-my-recipes',
@@ -8,16 +13,35 @@ import { mockUser} from '../mock-users';
   styleUrls: ['./my-recipes.component.css']
 })
 export class MyRecipesComponent implements OnInit {
+  savedRecipes: Recipe[];
+  categories: Category[];
+  @Input() recipe: Recipe;
 
-  constructor() { }
-  title = new FormControl('');
-  description = new FormControl('');
+  constructor(
+    private categoryService: CategoryService,
+    private recipeService: RecipeService) {
+  }
 
   ngOnInit(): void {
+    this.getRecipes();
+    this.getCategories();
+  }
+  getRecipes() {
+    this.recipeService.getRecipes()
+      .subscribe((recipe) => {
+        this.savedRecipes = recipe;
+      });
+  }
+
+  getCategories() {
+    this.categoryService.getCategories()
+      .subscribe((category) => {
+        this.categories = category;
+      });
   }
 
   newRecipe() {
-    // tslint:disable-next-line:max-line-length
-    mockUser.user_recipes.push({id: Math.random(), title: this.title.value, description: this.description.value, ingredients: [], steps: [], likes: 0, comments: [], front_image: '', images: [], category: null});
+    this.recipeService.addRecipe(this.recipe);
   }
+
 }
