@@ -1,4 +1,4 @@
-footer{
+footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -10,22 +10,33 @@ footer{
   padding: 2% 15% 5% 0;
   background-color: #EBECF0;
 }
-a{
+
+a {
+  color: #61677C;
+  text-decoration: none;
   margin-top: 10px;
 }
-strong{
+
+a:hover {
+  text-decoration: underline;
+}
+
+strong {
   margin-bottom: 10px;
 }
-.list{
+
+.list {
   display: flex;
   flex-direction: column;
 }
-.body{
+
+.body {
   background-color: #EBECF0;
   padding-top: 10%;
   font-family: sans-serif;
 }
-.bottom{
+
+.bottom {
   background-color: #26292f;
   color: #d4d5d9;
   text-align: center;

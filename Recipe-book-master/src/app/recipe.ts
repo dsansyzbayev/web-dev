@@ -8,7 +8,7 @@ export interface Recipe {
     ingredients: string[];
     steps: string[];
     likes: number;
-    comments: string[];
+    comments: Comment[];
     front_image: string;
     images: string[];
     category: Category;

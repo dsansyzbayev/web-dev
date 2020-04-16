@@ -56,7 +56,7 @@
             <h3>Comments:</h3>
             <div *ngFor='let step of selectedItem.comments, let i = index'>
               <h5>
-                - {{step}}
+                - {{step.text}}
               </h5>
             </div>
           </div>
@@ -64,5 +64,10 @@
       </div>
     </div>
   </div>
+</div>
+
+<div class="comment">
+  <input type="text" placeholder="Comment" id="comment">
+  <button (click)="send()">Send</button>
 </div>
 <app-footer></app-footer>

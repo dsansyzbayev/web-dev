@@ -57,8 +57,13 @@ h3 {
   flex-direction: row;
   justify-content: space-around;
 }
-
-button {
+.comment{
+  padding: 2%;
+}
+.comment input{
+  width: 50%;
+}
+button, input {
   margin-right: 5px;
   font-size: 16px;
   border: 0;

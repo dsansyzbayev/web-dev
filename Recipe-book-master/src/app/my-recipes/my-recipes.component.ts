@@ -2,9 +2,9 @@ import {Component, OnInit, Input} from '@angular/core';
 import {FormControl} from '@angular/forms';
 import {mockUser} from '../mock-users';
 import {List} from '../list';
-import { RecipeService} from '../recipe.service';
+import {RecipeService} from '../recipe.service';
 import {Recipe} from '../recipe';
-import { CategoryService} from '../category.service';
+import {CategoryService} from '../category.service';
 import {Category} from '../category';
 
 @Component({
@@ -15,6 +15,7 @@ import {Category} from '../category';
 export class MyRecipesComponent implements OnInit {
   savedRecipes: Recipe[];
   categories: Category[];
+  userRecipes: Recipe[];
   @Input() recipe: Recipe;
 
   constructor(
@@ -26,11 +27,13 @@ export class MyRecipesComponent implements OnInit {
     this.getRecipes();
     this.getCategories();
   }
+
   getRecipes() {
-    this.recipeService.getRecipes()
-      .subscribe((recipe) => {
-        this.savedRecipes = recipe;
-      });
+    this.savedRecipes = mockUser.saved_recipes;
+    this.userRecipes = mockUser.user_recipes;
+    this.userRecipes.push(List[3]);
+    this.userRecipes.push(List[7]);
+    this.userRecipes.push(List[9]);
   }
 
   getCategories() {
@@ -41,7 +44,9 @@ export class MyRecipesComponent implements OnInit {
   }
 
   newRecipe() {
-    this.recipeService.addRecipe(this.recipe);
+    mockUser.user_recipes.push(this.recipe);
+  }
+  delete(recipe: Recipe) {
   }
 
 }

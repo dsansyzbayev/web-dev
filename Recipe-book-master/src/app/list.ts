@@ -1,4 +1,5 @@
 import {CATEGORIES} from './mock-categories';
+import {mockUser} from './mock-users';
 
 export const List = [
   {
@@ -29,13 +30,30 @@ export const List = [
         ],
     likes: 17,
     comments: [
-            'Oh my goodness! Followed previous advice about baking the bottom layer for 6 minutes, and that is all I changed.' +
-            ' Ranting and raving followed! ',
-            'YUM!!!!!!!!!!! I took these to a party and they were a MAJOR HIT!!!! I spruced up the recipe a little bit' +
-            ' after reading the reviews.',
-            'Delicious! I don\'t care for swiss cheese. So, I did eliminate it from the recipe. ' +
-            'I also just did one layer of the red peppers. '
-        ],
+      {
+      id: 1,
+      author: mockUser,
+      title: 'comment',
+      text: 'Oh my goodness! Followed previous advice about baking the bottom layer for 6 minutes, and that is all I changed.' +
+        ' Ranting and raving followed! ',
+      likes: 0
+      },
+      {
+        id: 2,
+        author: mockUser,
+        title: 'comment',
+        text: 'YUM!!!!!!!!!!! I took these to a party and they were a MAJOR HIT!!!! I spruced up the recipe a little bit' +
+          ' after reading the reviews.',
+        likes: 0
+      },
+      {
+        id: 2,
+        author: mockUser,
+        title: 'comment',
+        text: 'Delicious! I don\'t care for swiss cheese. So, I did eliminate it from the recipe. ' +
+          'I also just did one layer of the red peppers.',
+        likes: 0
+      }],
     front_image: '../../assets/1_0.jpg',
     images: [
             '../../assets/1_1.jpg',
@@ -75,10 +93,22 @@ export const List = [
     ],
     likes: 39,
     comments: [
-      'Delicious! I don\'t care for swiss cheese. So, I did eliminate it from the recipe. ' +
-      'I also just did one layer of the red peppers.',
-      'Oh my goodness! Followed previous advice about baking the bottom layer for 6 minutes, and that is all I changed.' +
-      ' Ranting and raving followed! '
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'Delicious! I don\'t care for swiss cheese. So, I did eliminate it from the recipe. ' +
+          'I also just did one layer of the red peppers.',
+        likes: 0
+      },
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'Oh my goodness! Followed previous advice about baking the bottom layer for 6 minutes, and that is all I changed.' +
+          ' Ranting and raving followed! ',
+        likes: 0
+      }
     ],
     front_image: '../../assets/2_0.jpg',
     images: [
@@ -110,10 +140,22 @@ export const List = [
     ],
     likes: 19,
     comments: [
-      'I think the people that are giving this a low rating are simply using the wrong type of cheese. You HAVE TO use ' +
-      'white american cheese.',
-      'I made the dip exactly as written & this dip is not edible. I gave it 3 stars because I worked on it this week ' +
-      '& the recipe is fixable.'
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'I think the people that are giving this a low rating are simply using the wrong type of cheese. You HAVE TO use ' +
+          'white american cheese.',
+        likes: 0
+      },
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'I made the dip exactly as written & this dip is not edible. I gave it 3 stars because I worked on it this week ' +
+          '& the recipe is fixable.',
+        likes: 0
+      }
     ],
     front_image: '../../assets/3_0.jpg',
     images: [
@@ -141,10 +183,22 @@ export const List = [
     ],
     likes: 235,
     comments: [
-      'I love, love, love new ideas to use my waffle maker and this is one more keeper for it. The room temp leftovers make ' +
-      'great sandwiches. Just a quick heads up, this doesn\'t work as nicely with glu...',
-      'It\'s puff pastry shaped like a waffle, that\'s all. Not as good as traditional waffles and way more expensive. And ' +
-      'puff pastry can be put to better use, such as in apple or cherry turnovers.'
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'I love, love, love new ideas to use my waffle maker and this is one more keeper for it. The room temp leftovers make ' +
+          'great sandwiches. Just a quick heads up, this doesn\'t work as nicely with glu...',
+        likes: 0
+      },
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'It\'s puff pastry shaped like a waffle, that\'s all. Not as good as traditional waffles and way more expensive. And ' +
+          'puff pastry can be put to better use, such as in apple or cherry turnovers.',
+        likes: 0
+      }
     ],
     front_image: '../../assets/4_0.jpg',
     images: [
@@ -185,9 +239,21 @@ export const List = [
     ],
     likes: 135,
     comments: [
-      'Learned new technique, and made as written. Oh yes, will be making this again and again and again...',
-      'Like the recipe but the instructions for medium high heat instantly burned the butter and the eggs. I dialed it down' +
-      ' to low (2-3 on a scale of up to 9) and while it took longer got much better'
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'Learned new technique, and made as written. Oh yes, will be making this again and again and again...',
+        likes: 0
+      },
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'Like the recipe but the instructions for medium high heat instantly burned the butter and the eggs. I dialed it down' +
+          ' to low (2-3 on a scale of up to 9) and while it took longer got much better',
+        likes: 0
+      }
     ],
     front_image: '../../assets/5_0.jpg',
     images: [
@@ -217,9 +283,21 @@ export const List = [
     ],
     likes: 27,
     comments: [
-      'I had never made crepes before, but thought, "how hard could it be?" Well, it does take a little practice. The first ' +
-      'few attempts were "practice crepes"!',
-      'This was a great, easy recipe...I just think it was a bit too eggy for me.'
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'I had never made crepes before, but thought, "how hard could it be?" Well, it does take a little practice. The first ' +
+          'few attempts were "practice crepes"!',
+        likes: 0
+      },
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'This was a great, easy recipe...I just think it was a bit too eggy for me.',
+        likes: 0
+      }
     ],
     front_image: '../../assets/6_0.jpg',
     images: [
@@ -253,10 +331,22 @@ export const List = [
     ],
     likes: 208,
     comments: [
-      'I love how quick an easy this is while being very elegant. Adding a little cayenne or mint or lemon/orange oil ' +
-      'make for a different twist and flavour.',
-      'Please help me. Mine was in the fridge for over eight hours and did not set up one bit. I followed the recipe ' +
-      'and instructions to the T, I even watched the tutorial video.'
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'I love how quick an easy this is while being very elegant. Adding a little cayenne or mint or lemon/orange oil ' +
+          'make for a different twist and flavour.',
+        likes: 0
+      },
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'Please help me. Mine was in the fridge for over eight hours and did not set up one bit. I followed the recipe ' +
+          'and instructions to the T, I even watched the tutorial video.',
+        likes: 0
+      }
     ],
     front_image: '../../assets/7_0.jpg',
     images: [
@@ -292,9 +382,21 @@ export const List = [
     ],
     likes: 48,
     comments: [
-      'We love this recipe and I keep finding new ways to modify it (I feel I have to, since I make it at LEAST once a week)',
-      'I scaled this recipe in half and went with some of the suggestions of reviewer, Shannon:) (click on "most helpful" ' +
-      'and you\'ll see her review). '
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'We love this recipe and I keep finding new ways to modify it (I feel I have to, since I make it at LEAST once a week)',
+        likes: 0
+      },
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'I scaled this recipe in half and went with some of the suggestions of reviewer, Shannon:) (click on "most helpful" ' +
+          'and you\'ll see her review). ',
+        likes: 0
+      }
     ],
     front_image: '../../assets/8_0.jpg',
     images: [
@@ -333,10 +435,22 @@ export const List = [
     ],
     likes: 198,
     comments: [
-      'These were very nice. I was expecting outstanding flavour for five stars though and this just didn\'t make it. Next ' +
-      'time I would add sweet chilli sauce, more tomato and garlic.',
-      'We followed the directions exactly as given and even used yummy fresh shrimp we brought home from our Gulf vacation, ' +
-      'but I thought this was very blah. '
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'These were very nice. I was expecting outstanding flavour for five stars though and this just didn\'t make it. Next ' +
+          'time I would add sweet chilli sauce, more tomato and garlic.',
+        likes: 0
+      },
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'We followed the directions exactly as given and even used yummy fresh shrimp we brought home from our Gulf vacation, ' +
+          'but I thought this was very blah. ',
+        likes: 0
+      }
     ],
     front_image: '../../assets/9_0.jpg',
     images: [
@@ -369,15 +483,44 @@ export const List = [
     ],
     likes: 18,
     comments: [
-      'I didn\'t have any brandy, so I substituded for more rum & it was delish. Also, used pinot grigio for a less sweet flavor ' +
-      'since the fruit and sprite made it sweet enough',
-      'Great Sangria and pretty too. I put some of the fruit on toothpicks for a garnish.',
-      'I made this for a BBQ. Everyone loved it. The only changes I made was I used pineapple flavored rum and skipped the brandy. ' +
-      'Will definitely make again!',
-      'Pretty good!!!! I added a spray of orange juice for a little more sweetness.',
-      'I thought this was good, although I did alter it to use ingredients I had on hand. I used a red zinfandel and used diet soda. ' +
-      'Thanks for sharing your recipe!'
-    ],
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'I didn\'t have any brandy, so I substituded for more rum & it was delish. Also, used pinot grigio for a less sweet flavor ' +
+          'since the fruit and sprite made it sweet enough',
+        likes: 0
+      },
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'Great Sangria and pretty too. I put some of the fruit on toothpicks for a garnish.',
+        likes: 0
+      },
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'I made this for a BBQ. Everyone loved it. The only changes I made was I used pineapple flavored rum and skipped ' +
+          'the brandy. Will definitely make again!',
+        likes: 0
+      },
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'Pretty good!!!! I added a spray of orange juice for a little more sweetness.',
+        likes: 0
+      },
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'I thought this was good, although I did alter it to use ingredients I had on hand. I used a red zinfandel and ' +
+          'used diet soda. Thanks for sharing your recipe!',
+        likes: 0
+      }],
     front_image: '../../assets/10_0.jpg',
     images: [
       '../../assets/10_1.jpg'
@@ -403,12 +546,42 @@ export const List = [
     ],
     likes: 17,
     comments: [
-      'Today I used fresh pineapple, pineapple juice, and Cabot® Greek Low Fat Vanilla Bean Yogurt (what I had on hand) for this ' +
-      'smoothie. I did add some of the optional ice',
-      'I made some changes. I decided to use cherries and cranberry juice as well as flavored yogurt',
-      'I will definitely make this again! It’s a great start to your morning! :) A bit less yogurt would be nice though.',
-      'This is an easy smoothie with great flavor. I have tried the blueberry one, raspberry and can\'t wait to try more!!!',
-      'Made it exactly as set out. It was good.'
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'Today I used fresh pineapple, pineapple juice, and Cabot® Greek Low Fat Vanilla Bean Yogurt (what I had on hand) for this ' +
+          'smoothie. I did add some of the optional ice',
+        likes: 0
+      },
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'I made some changes. I decided to use cherries and cranberry juice as well as flavored yogurt',
+        likes: 0
+      },
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'I will definitely make this again! It’s a great start to your morning! :) A bit less yogurt would be nice though.',
+        likes: 0
+      },
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'This is an easy smoothie with great flavor. I have tried the blueberry one, raspberry and can\'t wait to try more!!!',
+        likes: 0
+      },
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'Made it exactly as set out. It was good.',
+        likes: 0
+      }
     ],
     front_image: '../../assets/11_0.jpg',
     images: [
@@ -436,9 +609,21 @@ export const List = [
     ],
     likes: 24,
     comments: [
-      'This is wonderful, especially with Meyer lemons. Be careful with the sugar though. I started with less sugar and didn\'t ' +
-      'need to add the rest.',
-      'Tasted too much of the lemon rinds.'
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'This is wonderful, especially with Meyer lemons. Be careful with the sugar though. I started with less sugar and didn\'t ' +
+          'need to add the rest.',
+        likes: 0
+      },
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'Tasted too much of the lemon rinds.',
+        likes: 0
+      }
     ],
     front_image: '../../assets/12_0.jpg',
     images: [
@@ -473,10 +658,22 @@ export const List = [
     ],
     likes: 19,
     comments: [
-      'With minor variations this is the recipe I\'ve been making for 40 years. It originally came from a home ec teacher ' +
-      'and it is beyond awesome.',
-      'As other reviewers mentioned, it was very moist and the flavor was good. My only issue was the sight & feel of the bananas ' +
-      'in the bread.'
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'With minor variations this is the recipe I\'ve been making for 40 years. It originally came from a home ec teacher ' +
+          'and it is beyond awesome.',
+        likes: 0
+      },
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'As other reviewers mentioned, it was very moist and the flavor was good. My only issue was the sight & feel of the ' +
+          'bananas in the bread.',
+        likes: 0
+      }
     ],
     front_image: '../../assets/13_0.jpg',
     images: [
@@ -514,11 +711,35 @@ export const List = [
     ],
     likes: 345,
     comments: [
-      'OUTSTANDING! You definitely DO NOT need a bread machine for these. (Click on the picture to see the photo I submitted).',
-      'Very nice tasting bread. It was a bit tough, but that may have been my fault.',
-      'This is an excellent recipe for French bread/baguettes. I use my KitchenAid and follow standard bread making procedures.',
-      'I  am a VERY picky person when it comes to bread. I lived almost all my life in France and I tried many baguette recipes, ' +
-      'but this one is the closest to the real thing I could find.'
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'OUTSTANDING! You definitely DO NOT need a bread machine for these. (Click on the picture to see the photo I submitted).',
+        likes: 0
+      },
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'Very nice tasting bread. It was a bit tough, but that may have been my fault.',
+        likes: 0
+      },
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'This is an excellent recipe for French bread/baguettes. I use my KitchenAid and follow standard bread making procedures.',
+        likes: 0
+      },
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'I  am a VERY picky person when it comes to bread. I lived almost all my life in France and I tried many baguette recipes, ' +
+          'but this one is the closest to the real thing I could find.',
+        likes: 0
+      }
     ],
     front_image: '../../assets/14_0.jpg',
     images: [
@@ -607,13 +828,31 @@ export const List = [
     ],
     likes: 75,
     comments: [
-      'This is definitely going to be a favorite. Even though I made the mistake of making it the day before so it was soggy on the ' +
-      'bottom everybody LOVED it! It still tasted delicious.',
-      'I made this for my Book Club friends because there are so many who are counting carbs gluten free vegetarian and on keto diets. ' +
-      'Everyone loved this dessert and some asked for the recipe. I broke up the bars and put them in a dessert dish and then added the' +
-      ' fruit on top....very pretty! I used a small square cake pan to bake them.',
-      'We LOVED these!! I don’t have much experience baking, but the instructions were easy. I will definitely make this again. I ' +
-      'baked them in a cupcake pan since I didn’t have a brownie pan.'
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'We LOVED these!! I don’t have much experience baking, but the instructions were easy. I will definitely make this again.' +
+          ' I baked them in a cupcake pan since I didn’t have a brownie pan.',
+        likes: 0
+      },
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'I made this for my Book Club friends because there are so many who are counting carbs gluten free vegetarian and on keto' +
+          ' diets. Everyone loved this dessert and some asked for the recipe. I broke up the bars and put them in a dessert dish and ' +
+          'then added the fruit on top....very pretty! I used a small square cake pan to bake them.',
+        likes: 0
+      },
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'This is definitely going to be a favorite. Even though I made the mistake of making it the day before so it was soggy ' +
+          'on the bottom everybody LOVED it! It still tasted delicious.',
+        likes: 0
+      }
     ],
     front_image: '../../assets/16_0.jpg',
     images: [
@@ -649,16 +888,28 @@ export const List = [
     ],
     likes: 80,
     comments: [
-      'OK - I don\'t want to be rude, but this is the deal: this is a perfect recipe, and if it fails for you, it\'s your fault, ' +
-      'not the recipe\'s. A couple of things you should know about cheesecakes: OVERBEATING WILL CAUSE A CHEESECAKE TO CRACK. Beat ' +
-      'cream cheese with sugar only until smooth. Proceed with a wooden spoon for the rest of the recipe. OVERBEATING WILL CAUSE A ' +
-      'CHEESECAKE TO HAVE THE "WRONG" TEXTURE. Air bubbles, gritty/not creamy texture, etc., are fixed my the same instructions above. ' +
-      'OVERCOOKING WILL CAUSE A CHEESECAKE TO CRACK. Do NOT cook this cheesecake until it\'s set. Matter of fact, don\'t check it at ' +
-      'all. Put the cheesecake in the oven, set the timer to 60 min., turn the oven off, and forget it. I mean it! Don\'t open the oven, ' +
-      'just leave it alone to do its thing. And that\'s it. A beautiful cheesecake. Far from bland: this is a PURIST\'S cheesecake. ' +
-      'It\'s great as is, but also a great foil for other flavours. I serve mine with passionfruit pulp or mango puree.',
-      'AMAZING! The KING of all cheesecakes! This is the recipe you are looking for Thick and Creamy! Ive made this 2X now ' +
-      'with tremendous sucess.'
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'AMAZING! The KING of all cheesecakes! This is the recipe you are looking for Thick and Creamy! Ive made this 2X now ' +
+          'with tremendous sucess.',
+        likes: 0
+      },
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'OK - I don\'t want to be rude, but this is the deal: this is a perfect recipe, and if it fails for you, it\'s your fault, ' +
+          'not the recipe\'s. A couple of things you should know about cheesecakes: OVERBEATING WILL CAUSE A CHEESECAKE TO CRACK. Beat ' +
+          'cream cheese with sugar only until smooth. Proceed with a wooden spoon for the rest of the recipe. OVERBEATING WILL CAUSE A ' +
+          'CHEESECAKE TO HAVE THE "WRONG" TEXTURE. Air bubbles, gritty/not creamy texture, etc., are fixed my the same instructions above. ' +
+          'OVERCOOKING WILL CAUSE A CHEESECAKE TO CRACK. Do NOT cook this cheesecake until it\'s set. Matter of fact, don\'t check it at ' +
+          'all. Put the cheesecake in the oven, set the timer to 60 min., turn the oven off, and forget it. I mean it! Don\'t open the oven, ' +
+          'just leave it alone to do its thing. And that\'s it. A beautiful cheesecake. Far from bland: this is a PURIST\'S cheesecake. ' +
+          'It\'s great as is, but also a great foil for other flavours. I serve mine with passionfruit pulp or mango puree.',
+        likes: 0
+      }
     ],
     front_image: '../../assets/17_0.jpg',
     images: [
@@ -687,10 +938,22 @@ export const List = [
     ],
     likes: 50,
     comments: [
-      '#1) Bake cake as directed. #2) Let the cake COOL for at least a half hour! Don\'t mix in the frosting while HOT! ' +
-      'You will get a gooey, albeit yummy, mess! #3) I used a handmixer to mix the cake and frosting.',
-      'These are great!!! And so easy!!! I see some members say they take hours to make (like one says 7....NOT!!! ) ' +
-      'If you follow the instructions they are not that hard!!!'
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: '#1) Bake cake as directed. #2) Let the cake COOL for at least a half hour! Don\'t mix in the frosting while HOT! ' +
+          'You will get a gooey, albeit yummy, mess! #3) I used a handmixer to mix the cake and frosting.',
+        likes: 0
+      },
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'These are great!!! And so easy!!! I see some members say they take hours to make (like one says 7....NOT!!! ) ' +
+          'If you follow the instructions they are not that hard!!!',
+        likes: 0
+      },
     ],
     front_image: '../../assets/18_0.jpg',
     images: [
@@ -719,10 +982,22 @@ export const List = [
     ],
     likes: 89,
     comments: [
-      'Roasted the beets yesterday, peeled, and put them in the fridge overnight. Peeling and cutting beets is so much easier when ' +
-      'they’re tender after roasting, so don’t even think about peel',
-      'My Hubby and I both loved this a lot! What a great way to use up some beets from our garden! The maple syrup and balsamic ' +
-      'really compliments the beets well, without completely overwhelming them'
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'Roasted the beets yesterday, peeled, and put them in the fridge overnight. Peeling and cutting beets is so much easier when ' +
+          'they’re tender after roasting, so don’t even think about peel',
+        likes: 0
+      },
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'My Hubby and I both loved this a lot! What a great way to use up some beets from our garden! The maple syrup and balsamic ' +
+          'really compliments the beets well, without completely overwhelming them',
+        likes: 0
+      }
     ],
     front_image: '../../assets/19_0.jpg',
     images: [
@@ -758,11 +1033,29 @@ export const List = [
     ],
     likes: 57,
     comments: [
-      'Whether it\'s at home or in restaurants, my husband and I are always spoiled by good, fresh, from scratch Caesar dressing. ' +
-      'This recipe sounded too good to be true',
-      'This was very good! I took the suggestion of another reviewer and put everything in a blender after chopping the garlic ' +
-      'and anchovies.',
-      'Sound the trumpets! Call off the dogs! The search for the ultimate creamy Caesar dressing is over. This is IT.'
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'Whether it\'s at home or in restaurants, my husband and I are always spoiled by good, fresh, from scratch Caesar dressing. ' +
+          'This recipe sounded too good to be true',
+        likes: 0
+      },
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'This was very good! I took the suggestion of another reviewer and put everything in a blender after chopping the garlic ' +
+          'and anchovies.',
+        likes: 0
+      },
+      {
+        id: 4,
+        author: mockUser,
+        title: 'comment',
+        text: 'Sound the trumpets! Call off the dogs! The search for the ultimate creamy Caesar dressing is over. This is IT.',
+        likes: 0
+      }
     ],
     front_image: '../../assets/20_0.jpg',
     images: [

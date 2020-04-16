@@ -19,39 +19,39 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AllUsersComponent } from './all-users/all-users.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryUserService }  from './in-memory-user.service';
+import { InMemoryUserService } from './in-memory-user.service';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-   declarations: [
-      AppComponent,
-      SignUpComponent,
-      LogInComponent,
-      MainListComponent,
-      NavbarComponent,
-      CategoriesComponent,
-      BestRecipesComponent,
-      MainPageComponent,
-      RecipeDetailsComponent,
-      MyRecipesComponent,
-      ProfileDetailComponent,
-      SavedRecipesComponent,
-      UserProfileComponent,
-      AllUsersComponent,
-      FooterComponent
-   ],
-   imports: [
-      BrowserModule,
-      AppRoutingModule,
-     ReactiveFormsModule,
-     FormsModule,
-     HttpClientModule,
-     HttpClientInMemoryWebApiModule.forRoot(
-        InMemoryUserService, {dataEncapsulation: false}
-     )
-   ],
-   bootstrap: [
-      AppComponent
-   ]
+  declarations: [
+    AppComponent,
+    SignUpComponent,
+    LogInComponent,
+    MainListComponent,
+    NavbarComponent,
+    CategoriesComponent,
+    BestRecipesComponent,
+    MainPageComponent,
+    RecipeDetailsComponent,
+    MyRecipesComponent,
+    ProfileDetailComponent,
+    SavedRecipesComponent,
+    UserProfileComponent,
+    AllUsersComponent,
+    FooterComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryUserService, {dataEncapsulation: false}
+    )
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }

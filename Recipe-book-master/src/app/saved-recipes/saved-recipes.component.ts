@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {List} from '../list';
+import {Recipe} from '../recipe';
 
 @Component({
   selector: 'app-saved-recipes',
@@ -13,6 +14,9 @@ export class SavedRecipesComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  remove(recipe: Recipe): void {
   }
 
 }

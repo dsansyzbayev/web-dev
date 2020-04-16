@@ -1,5 +1,5 @@
-import { User } from './user';
-import { List } from './list';
+import {User} from './user';
+import {List} from './list';
 
 export const mockUser: User = {
   id: 0,
@@ -9,6 +9,6 @@ export const mockUser: User = {
   last_name: 'sansyzbayev',
   email: 'daniar004@gmail.com',
   image: '../../assets/1_0.jpg',
-  saved_recipes: [List[0], List[1], List[3]],
+  saved_recipes: [],
   user_recipes: [],
 };

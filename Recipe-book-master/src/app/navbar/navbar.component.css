@@ -11,7 +11,8 @@ nav {
 }
 
 .logo {
-  justify-content: space-evenly;
+  width: 28%;
+  justify-content: space-between;
   display: flex;
   flex-direction: row;
 }
@@ -21,8 +22,7 @@ nav {
 }
 
 .nav-title {
-  margin: auto;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: bold;
   font-family: 'Bellota', cursive;
   color: #FF9999;
